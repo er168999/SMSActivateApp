@@ -8,8 +8,9 @@ import java.io.IOException;
 
 public class Runner {
     public static void main(String[] args) throws SMSActivateBaseException, IOException {
+        JsonParseService jsonParseService = new JsonParseService();
         ConnectionService connectionService = new ConnectionService();
-        System.out.println(connectionService.connect());
+        System.out.println(connectionService.connect(null));
     }
 
 }
