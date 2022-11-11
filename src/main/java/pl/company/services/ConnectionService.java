@@ -7,12 +7,13 @@ import java.io.IOException;
 import java.math.BigDecimal;
 
 public class ConnectionService {
+    BigDecimal balance;
 
     public String connect(String authKey) throws SMSActivateBaseException, IOException {
 
 
         SMSActivateApi smsActivateApi = new SMSActivateApi(authKey);
-        BigDecimal balance = smsActivateApi.getBalance();
+        balance = smsActivateApi.getBalance();
         return "Connected, actual balance:  " + balance;
     }
 
