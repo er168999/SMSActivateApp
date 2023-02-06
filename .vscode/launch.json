@@ -1,0 +1,24 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Kubernetes: Run/Debug",
+            "type": "cloudcode.kubernetes",
+            "request": "launch",
+            "skaffoldConfig": "${workspaceFolder}/skaffold.yaml",
+            "watch": true,
+            "cleanUp": true,
+            "portForward": true
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open LICENSE-2.0[1].html",
+            "file": "c:\\Users\\ASUS\\AppData\\Local\\Microsoft\\Windows\\INetCache\\IE\\3CLEGDTY\\LICENSE-2.0[1].html"
+        }
+    ]
+}
